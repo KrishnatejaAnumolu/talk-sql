@@ -9,7 +9,7 @@ import ErrorMessage from "../components/ErrorMessage";
 import { getAppState, setAppState } from "./index"; // Import state helpers
 import { DBConnectionParams } from "../lib/db";
 import type { FieldPacket } from "mysql2";
-import { Database, AlertCircle, ChevronLeft, RefreshCw } from "lucide-react";
+import { Database, ChevronLeft, RefreshCw } from "lucide-react";
 
 interface QueryPageState {
   results: any[];

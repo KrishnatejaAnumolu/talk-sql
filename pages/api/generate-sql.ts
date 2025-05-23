@@ -31,8 +31,7 @@ export default async function handler(
     console.error("Generate SQL API Error:", error);
     // Add this to include the raw LLM output if available
     res.status(500).json({
-      error: error.message || "Failed to generate SQL query.",
-      llmOutput: error.llmOutput || undefined,
+      error: error.message || "Failed to generate SQL query."
     });
   }
 }
